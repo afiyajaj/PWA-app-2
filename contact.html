@@ -1,74 +1,146 @@
-
 <!DOCTYPE html>
-<html lang="en" class="contact">
+<html>
     <head>
-    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/main.css" />
-        
-    <title>Contact</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>The Kornery - Contact page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body>
-        
-        <!-- your header here -->
-        
-        
-<nav>
-    <div class="navbar navbar-inverse navbar-static-top">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href=".">Portfolio of Afiya & Fatima</a>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="#" class="navbar-brand scroll-top">The Kornery</a>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="menu.html">Today's Menu</a>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <!--/.container-->
     </div>
-</nav>
-        
-        <main>
-    
-        <h1 id="contact-me">Contact Me</h1>
-<h2 id="i-would-love-to-hear-from-you">I would love to hear from you</h2>
-<p>Please fill out the form below to send me a message. I will reply within 3 business days.</p>
+    <!--/.header-->
 
-        <form action="https://dry-bayou-18746.herokuapp.com/send/" method="POST">
-            <!-- add a div.form-group rather than the <br />-->
-            <div class="form-group">
-                <!-- give inputs the class form-control -->
-                <label>Name: <input name="name" placeholder="name" class="form-control" /></label>
-            </div>
-            <div class="form-group">
-                <label>Email:<input name="email" placeholder="email" type="email" class="form-control" /></label>
-            </div>
-            <div class="form-group">
-                <label>Phone Number:<input name="phone" placeholder="telephone" type="tel"
-                        class="form-control" /></label>
-            </div>
-            <div class="form-group">
-                <label>Message:<textarea name="message" placeholder="type your message here"
-                        class="form-control"></textarea></label>
-            </div>
-            <button type="submit">Send Message</button>
 
-        </form>
-        
-    </main>
-    
-<footer>
-    &copy; <script>document.write(new Date().getFullYear())</script> Afiya & Fatima
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-        
-    </body>
+    <section class="page-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with us by please filling out the form below. We will reply within 3 business days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="contact-us">
+    <form action="https://dry-bayou-18746.herokuapp.com/send/" method="POST">
+        <!-- add a div.form-group rather than the <br />-->
+        <div class="form-group">
+            <!-- give inputs the class form-control -->
+            <label>Name: <input name="name" placeholder="name" class="form-control" /></label>
+        </div>
+        <div class="form-group">
+            <label>Email:<input name="email" placeholder="email" type="email" class="form-control" /></label>
+        </div>
+        <div class="form-group">
+            <label>Phone Number:<input name="phone" placeholder="telephone" type="tel"
+                    class="form-control" /></label>
+        </div>
+        <div class="form-group">
+            <label>Message:<textarea name="message" placeholder="type your message here"
+                    class="form-control"></textarea></label>
+        </div>
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
+
+
+
+   
+
+
+
+  
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
 </html>
-        
